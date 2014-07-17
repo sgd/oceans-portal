@@ -1,0 +1,10 @@
+# Site settings
+title: Oceans
+email: nick@globalmechanic.com
+description: "Oceans"
+baseurl: ""
+url: "http://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
