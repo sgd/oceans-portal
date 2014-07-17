@@ -1,0 +1,9 @@
+// @nick -- Sadly, we have to duplicate some code to overwrite the default styles. 
+// This removes attributes from foundation/components/panels.scss
+
+.panel {
+  border: 0;
+  margin-bottom: 0;
+  padding: 1.25rem;
+  background: 0;
+}

@@ -1,5 +1,12 @@
+// Defaults
 @import "settings";
 @import "foundation";
+
+// Components 
+@import "components/panels";
+@import "components/header";
+@import "components/footer";
+
 
 // Or selectively include components
 // @import
