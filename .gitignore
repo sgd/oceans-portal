@@ -2,3 +2,7 @@
 /.sass-cache/*
 *.DS_Store
 /stylesheets/*
+/_site/*
+_site/README.md
+
+_site/feed.xml
