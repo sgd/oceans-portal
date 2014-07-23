@@ -16,9 +16,11 @@
 
 ## Getting the site running locally
 
-#### Step 0
-If you’re running a PC you will need to install ruby (macs comes with it):
-http://rubyinstaller.org/
+#### Setup
+* Install the XCode (https://developer.apple.com/xcode/) and the Xcode Command Line Utilities (https://developer.apple.com/downloads/ — you'll have to sign in, then search for "command")
+* If you’re running a PC you will need to install ruby (http://rubyinstaller.org/)
+* [Install the GitHub App ](http://mac.github.com/)
+* [Install Git](http://git-scm.com/downloads)
 
 #### Step 1
 Clone the repo from Github:
@@ -37,7 +39,7 @@ Open Terminal
 
 `$ jekyll build --watch (The current folder will be generated & watched for changes)`
 
-Browse to http://localhost:4000
+Browse to http://localhost:4000/
 
 #### Step 3
 Compass compiles all the SCSS into a single CSS file that gets delivered. You will need to install compass and then make it watch for changes to see anything you’ve done. 
