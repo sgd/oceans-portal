@@ -28,6 +28,7 @@ https://github.com/sgd/oceans-portal
 Jekyll is the core of the website that transforms all the static HTML pages into a real website, it also acts as a local server. You will need to install and run Jekyll to see the site locally and to see any changes you’ve made.
 
 Open Terminal
+
 `$ gem install jekyll`
 
 `$ cd to-where-you-cloned-the-github-directory`
