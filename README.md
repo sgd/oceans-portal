@@ -37,7 +37,7 @@ $ jekyll serve
 $ jekyll build --watch (The current folder will be generated & watched for changes)
 ```
 
-Browse to http://localhost:4000/
+Browse to [http://localhost:4000](http://localhost:4000)
 
 #### Step 3
 Compass compiles all the SCSS into a single CSS file that gets delivered. You will need to install compass and then make it watch for changes to see anything you’ve done. 
