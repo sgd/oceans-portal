@@ -51,3 +51,6 @@ Open Terminal
 `$ cd to-where-you-cloned-the-github-directory`
 
 `$ compass watch`
+
+#### Done
+You should now be able to see the latest version of the Portal on your local machine! 
