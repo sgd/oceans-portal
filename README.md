@@ -46,13 +46,12 @@ Compass compiles all the SCSS into a single CSS file that gets delivered. You wi
 
 Open Terminal
 
-`$ gem update --system`
-
-`$ gem install compass`
-
-`$ cd to-where-you-cloned-the-github-directory`
-
-`$ compass watch`
+```
+$ gem update --system
+$ gem install compass
+$ cd to-where-you-cloned-the-github-directory
+$ compass watch
+```
 
 #### Done
 You should now be able to see the latest version of the Portal on your local machine! 
