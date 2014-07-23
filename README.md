@@ -29,15 +29,22 @@ Jekyll is the core of the website that transforms all the static HTML pages into
 
 Open Terminal
 `$ gem install jekyll`
+
 `$ cd to-where-you-cloned-the-github-directory`
+
 `$ jekyll serve`
+
 `$ jekyll build --watch (The current folder will be generated & watched for changes)`
+
 Browse to http://localhost:4000
 
 ### STEP 3
 Compass compiles all the SCSS into a single CSS file that gets delivered. You will need to install compass and then make it watch for changes to see anything you’ve done.  
 Open Terminal
 `$ gem update --system`
+
 `$ gem install compass`
+
 `$ cd to-where-you-cloned-the-github-directory`
+
 `$ compass watch`
