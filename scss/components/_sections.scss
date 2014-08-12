@@ -1,3 +1,13 @@
 .section--headliner{
 	padding: 2em 0;
 }
+
+.create-slide {
+	&.-hide {
+		display: none;
+	}
+
+	&.-show {
+		display: block;
+	}
+}
