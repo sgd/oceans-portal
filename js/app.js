@@ -83,12 +83,12 @@ function checkProgress(step) {
 	$indicator.each(function(index, element){
 	    if (index <= step - 1 ) {
 			$(element)
-				.addClass('indicator-done')
-				.removeClass('indicator-todo')
+				.addClass('c--done')
+				.removeClass('c--todo')
 		} else {
 			$(element)
-				.addClass('indicator-todo')
-				.removeClass('indicator-done');
+				.addClass('c--todo')
+				.removeClass('c--done');
 		}
     });
 }
@@ -98,9 +98,9 @@ function checkNav(step){
 	var $next = $('.c--next');
 
 	if (step === 1){
-		$prev.css({ visibility: 'hidden' });
+		$prev.css({ opacity: '0.2' });
 	} else {
-		$prev.css({ visibility: 'visible' });
+		$prev.css({ opacity: '1' });
 	}
 	if (step === 4){
 		$next.text('Finish');
