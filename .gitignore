@@ -3,3 +3,5 @@
 *.DS_Store
 /stylesheets/*
 /_site/*
+_site/*
+_site/js/app.js
