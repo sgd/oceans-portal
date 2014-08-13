@@ -27,7 +27,14 @@
 Clone the repo from Github:
 https://github.com/sgd/oceans-portal
 
-#### Step 2
+#### Step 1
+Install Foundation
+```
+$ npm install -g bower grunt-cli
+$ gem install foundation
+```
+
+#### Step 3
 Jekyll is the core of the website that transforms all the static HTML pages into a real website, it also acts as a local server. You will need to install and run Jekyll to see the site locally and to see any changes you’ve made.
 
 ```
@@ -39,12 +46,13 @@ $ jekyll build --watch (The current folder will be generated & watched for chang
 
 Browse to [http://localhost:4000](http://localhost:4000)
 
-#### Step 3
+#### Step 4
 Compass compiles all the SCSS into a single CSS file that gets delivered. You will need to install compass and then make it watch for changes to see anything you’ve done. 
 
 ```
 $ gem update --system
 $ gem install compass
+$ gem install autoprefixer-rails
 $ cd to-where-you-cloned-the-github-directory
 $ compass watch
 ```
