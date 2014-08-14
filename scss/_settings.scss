@@ -59,14 +59,6 @@ $body-font-family: "ff-din-round-web", Helvetica, Arial, sans-serif;
 // $opposite-direction: right;
 // $default-float: left;
 
-// We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
-
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
 // $global-rounded: 1000px;
@@ -129,7 +121,7 @@ $body-font-family: "ff-din-round-web", Helvetica, Arial, sans-serif;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
-// $header-top-margin: .2rem;
+$header-top-margin: 0;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
 

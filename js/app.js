@@ -54,12 +54,12 @@ function checkState(step){
 // Reads the Page Hash to find the current Slide
 function checkPageHashStep(){
 	return location.hash.replace('#/slide/', '') || 1;
-}
+};
 
 // Changes the Page Hash to reflect the current slide
 function setPageHash(step){
 	location.hash = '/slide/' + step;
-}
+};
 
 function checkSlide(step) {
 	var $slide = $('.create-slide');
@@ -75,7 +75,7 @@ function checkSlide(step) {
 				.removeClass('-show');
 		}
 	});
-}
+};
 
 function checkProgress(step) {
 	var $indicator = $('.c--indicator li');
@@ -91,7 +91,7 @@ function checkProgress(step) {
 				.removeClass('c--done');
 		}
     });
-}
+};
 
 function checkNav(step){
 	var $prev = $('.c--prev');
@@ -105,4 +105,41 @@ function checkNav(step){
 	if (step === 4){
 		$next.text('Finish');
 	}
-}
+};
+
+// // kill the message box with one swift click. 
+// // this needs a check before it just delets the comment
+// function closeMessage(){
+// 	 var $close = $('.live-post-comment .c--close');
+
+// 	 $close.click(function(){
+// 	 	$('.live-post-comment').hide();
+// 	 });
+// };
+
+// closeMessage();
+
+
+// close the live show down
+
+function completeLiveEvent() {
+
+	var $completeLink = $('.live-event-end');
+
+	$('.live-event-completed').hide();
+
+	$('.live-complete-true').click(function(){
+		$('#event-complete-modal').foundation('reveal', 'close');
+		$('.live-event-completed').show();
+		$completeLink.css({opacity: '0.5', cursor: 'default'})
+		$completeLink.text('Live Event Over');
+		$completeLink.click(function(){
+			return false;
+		});
+	});
+};
+
+completeLiveEvent();
+
+
+

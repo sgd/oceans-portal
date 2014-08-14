@@ -1,0 +1,114 @@
+// the background to the video feed
+.live-video {
+	background: #000000;
+}
+
+// the background to the live comments area
+.live-feed {
+	padding-bottom: 0.3rem;
+	background: #e8eaee;
+}
+
+// live section subheader styles
+.live-video-subheader {
+
+	.live-event-details {
+		margin-bottom: 0;
+		color: #ffffff;		
+	}
+
+	ul.live-event-activities {
+		margin-bottom: 0;
+	}
+
+	.live-event-end {
+		margin-right: 1.8rem;
+		color: #e6b86b;
+	}
+}
+
+
+.live-comment-input {
+	padding: 1.5rem;
+	margin: 0.5rem 0;
+	background: #ffffff;
+	border: 1px solid $border-color;
+}
+
+// style for the individual posts
+.live-post-comment {
+	position: relative;
+	padding: 2rem;
+	margin-bottom: 0.3rem;
+	background: #ffffff;
+	border: 1px solid $border-color;
+
+	.c--close {
+		
+		position: absolute; 
+		top: 0;
+		right: 0;
+		height: 44px;
+		width: 44px;
+		text-align: center;
+
+		& span {
+			@include border-radius(11px);
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 32px;
+			width: 32px;
+			font-size: 2.5rem;
+			line-height: 1;
+		}
+	}
+}
+
+// style for the avatar, time and title
+.live-comment-profile {
+	text-align: center;
+
+	.live-comment-time {
+		font-size: 1.4rem;
+	}
+}
+
+// style for the actual avatar
+.live-comment-avatar {	
+	margin: 1rem 0;
+
+	img {
+		@include border-radius(75px);
+		border: 1px solid $border-color;
+	}
+}
+
+// Teacher said, reporter said, someone said
+.live-comment-action {
+	color: #c7ccd5;
+}
+
+
+/******************************
+Live Event Over 
+********************************/
+
+.live-event-completed {
+	background: #e8eaee;
+
+	.columns {
+		padding: 0;
+	}
+
+	.alert-box {		
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+

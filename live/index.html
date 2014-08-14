@@ -4,18 +4,51 @@ title: OLP portal
 ---
 
 <section class="c-sub-header">
-	<div class="row">
-		<div class="large-12 columns">
-			ball
-		</div>
-	</div>
+	{% include live-stream-subhead.html %}
 </section>
 
-<div class="c-live-video">
+<div id="event-complete-modal" class="reveal-modal small" data-reveal>
+  <h4>Are you sure you want to end the live event?</h4>
+  <p>This means everything will literally stop right now.</p>
+  <ul class="inline-list">
+  	<li><a href="#" class="live-complete-true">Yes, end the live event</a></li>
+  </ul> 
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="live-video">
 	<div class="row">
 		<div class="large-12 columns">
-			slkdjskldjskaldj
+			<div class="flex-video">
+		        <iframe width="420"
+		        	    height="315"
+		        	    src="//www.ustream.tv/embed/18503887?wmode=direct"
+		        	    frameborder="0"
+		        	    allowfullscreen></iframe>
+			</div>
 		</div>
+	</div>
+</div>
+
+<div class="live-event-completed">
+	<div class="row">
+		<div class="large-12 columns">
+			<div data-alert class="alert-box">
+				This live event is has been completed.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="live-feed">
+	<div class="row live-comment-box">
+		<div class="large-12 columns live-comment-input">
+			post comments from here eventually
+		</div>
+	</div>
+
+	<div class="live-comments-stream">
+		{% include live-stream-comments.html %}
 	</div>
 </div>
 
