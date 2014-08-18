@@ -1,11 +1,11 @@
 # Site settings
 title: Oceans
-email: nick@globalmechanic.com
 description: "This is a description about the oceans project"
-# baseurl: ""
 url: ""
-timezone: America/Vancouver
 bodyclass: ""
+# baseurl: ""
+# timezone: America/Vancouver
+#email: nick@globalmechanic.com
 
 # Build settings
 markdown: kramdown
