@@ -3,8 +3,9 @@ title: Oceans
 email: nick@globalmechanic.com
 description: "This is a description about the oceans project"
 # baseurl: ""
-# url: "http://yourdomain.com"
+url: ""
 timezone: America/Vancouver
+bodyclass: ""
 
 # Build settings
 markdown: kramdown
