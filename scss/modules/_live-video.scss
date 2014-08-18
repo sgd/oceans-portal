@@ -20,13 +20,7 @@
 	ul.live-event-activities {
 		margin-bottom: 0;
 	}
-
-	.live-event-end {
-		margin-right: 1.8rem;
-		color: #e6b86b;
-	}
 }
-
 
 .live-comment-input {
 	padding: 1.5rem;
@@ -94,6 +88,17 @@
 /******************************
 Live Event Over 
 ********************************/
+
+.live-event-end {
+	display: none !important;
+	margin-right: 1.8rem;
+	color: #e6b86b;
+
+	.live-event & {
+		display: block !important;
+	}
+
+}
 
 .live-event-completed {
 	background: #e8eaee;
