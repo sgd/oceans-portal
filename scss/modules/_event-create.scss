@@ -3,31 +3,6 @@
 		text-align: center;
 	}
 }
-
-// .c--indicator {
-// 	margin: 0;
-// 	padding: 0;
-// 	list-style: none;
-// 	border: 1px solid red;
-
-// 	li {
-// 		@include box-sizing(border-box);
-// 		display: inline-block;
-//     	text-align: center;
-//     	width: 25%;
-// 	}
-
-// 	.c--done {
-//     	color: #dc9a2c;
-//     	border-bottom: 4px solid #dc9a2c;
-// 	}
-// 	.c--todo {
-//     	color: #f1d7ab; 
-//     	border-bottom: 4px solid #f1d7ab;
-// 	}
-// }
-
-
 .c--indicator {
 
 	.c--progress-item {
@@ -49,7 +24,6 @@
 .c--prev {
 	margin-bottom: 0;
 }
-
 
 .c--next {
 	color: #000000;
