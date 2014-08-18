@@ -78,7 +78,7 @@ function checkSlide(step) {
 };
 
 function checkProgress(step) {
-	var $indicator = $('.c--indicator li');
+	var $indicator = $('.c--indicator .c--progress-item');
 
 	$indicator.each(function(index, element){
 	    if (index <= step - 1 ) {
