@@ -19,12 +19,27 @@
     text-rendering: optimizeLegibility;
 }
 
+/* Actual icons */
+
 .icon-cross:before {
     content: "\e600";
+    color: $border-color;
+    font-size: 1.3rem;
 }
 .icon-info:before {
     content: "\e602";
+    color: #dc9a2c;
+    font-size: 1.2rem;
+    margin-left: 0.4rem;
 }
 .icon-help:before {
     content: "\e604";
+}
+
+/* Make sure we have some kind of fall back usability here */
+
+.screen-reader {
+    position: absolute; 
+    top: -9999px; 
+    left:-9999px; 
 }
