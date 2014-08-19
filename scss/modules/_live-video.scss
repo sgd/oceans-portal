@@ -1,14 +1,3 @@
-// the background to the video feed
-.live-video {
-	background: #000000;
-}
-
-// the background to the live comments area
-.live-feed {
-	padding-bottom: 0.3rem;
-	background: #e8eaee;
-}
-
 // live section subheader styles
 .live-video-subheader {
 
@@ -19,9 +8,34 @@
 
 	.live-event-controls {
 		text-align: center;
+		border: 1px solid green;
+
+		.columns {
+			border: 1px solid red;
+		}
 	}
 }
 
+// ==========================================================================
+// Video Box
+// ==========================================================================
+
+// the background to the video feed
+.live-video {
+	background: #000000;
+}
+
+// ==========================================================================
+// Comments
+// ==========================================================================
+
+// Live comments area
+.live-feed {
+	padding-bottom: 0.3rem;
+	background: #e8eaee;
+}
+
+// Comment box 
 .live-comment-input {
 	padding: 1.5rem;
 	margin: 0.5rem 0;
@@ -29,7 +43,6 @@
 	border: 1px solid $border-color;
 }
 
-// style for the individual posts
 .live-post-comment {
 	position: relative;
 	padding: 2rem;
@@ -37,8 +50,7 @@
 	background: #ffffff;
 	border: 1px solid $border-color;
 
-	.c--close {
-		
+	.c--close {		
 		position: absolute; 
 		top: 0;
 		right: 0;
@@ -54,7 +66,7 @@
 	}
 }
 
-// style for the avatar, time and title
+// Time and Title
 .live-comment-profile {
 	text-align: center;
 
@@ -63,7 +75,7 @@
 	}
 }
 
-// style for the actual avatar
+// User avatar
 .live-comment-avatar {	
 	margin: 1rem 0;
 
@@ -78,10 +90,9 @@
 	color: #c7ccd5;
 }
 
-
-/******************************
-Live Event Over 
-********************************/
+// ==========================================================================
+// Live Event Over 
+// ==========================================================================
 
 .live-event-end {
 	display: none !important;
