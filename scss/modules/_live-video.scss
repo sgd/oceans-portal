@@ -5,14 +5,52 @@
 		margin-bottom: 0;
 		color: #ffffff;		
 	}
+}
 
-	.live-event-controls {
-		text-align: center;
-		border: 1px solid green;
+// ==========================================================================
+// Live Event Controls
+// ==========================================================================
 
-		.columns {
-			border: 1px solid red;
-		}
+.live-event-controls {
+
+	.columns {
+		padding: 0;
+		border: 1px solid #0d1c39;
+	}
+
+	.button {
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	.inline-list {
+		float: right;
+		margin-bottom: 0;
+	}
+
+	.inline-list li {
+		margin-left: 0.6rem;
+	}
+}
+
+.live-event-end {
+	display: none !important;
+
+	// Make it show up on /live/
+	.live-event & {
+		display: block !important;
+	}
+}
+
+.live-event-completed {
+	background: #e8eaee;
+
+	.columns {
+		padding: 0;
+	}
+
+	.alert-box {		
+		margin-bottom: 0;
 	}
 }
 
@@ -89,35 +127,3 @@
 .live-comment-action {
 	color: #c7ccd5;
 }
-
-// ==========================================================================
-// Live Event Over 
-// ==========================================================================
-
-.live-event-end {
-	display: none !important;
-	color: #e6b86b;
-
-	.live-event & {
-		display: block !important;
-	}
-
-}
-
-.live-event-completed {
-	background: #e8eaee;
-
-	.columns {
-		padding: 0;
-	}
-
-	.alert-box {		
-		margin-bottom: 0;
-	}
-}
-
-
-
-
-
-
