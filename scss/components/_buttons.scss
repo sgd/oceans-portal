@@ -1,0 +1,9 @@
+$padding: 0.2rem;
+$full-width: true;
+$bg: $primary-color;
+
+.button-sm {
+  @include button-base;
+  @include button-size($padding, $full-width);
+  @include button-style($bg);
+}
