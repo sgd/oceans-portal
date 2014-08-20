@@ -3,9 +3,6 @@ title: Oceans
 description: "This is a description about the oceans project"
 url: ""
 bodyclass: ""
-# baseurl: ""
-# timezone: America/Vancouver
-#email: nick@globalmechanic.com
 
 # Build settings
 markdown: kramdown
