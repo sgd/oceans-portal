@@ -1,13 +1,18 @@
+// ==========================================================================
+// Progress Indicator
+// ==========================================================================
+
 .c-create-progress {
 	.columns {
 		text-align: center;
 	}
 }
-.c--indicator {
 
-	.c--progress-item {
-		color: #fff;
-	}
+.c--indicator {
+	padding-top: 0.875rem;
+	padding-right: 1.75rem;
+	padding-bottom: 0.9375rem;
+	padding-left: 1.75rem;
 
 	.c--done {
     	color: #dc9a2c;
@@ -17,9 +22,17 @@
     	color: #f1d7ab; 
     	border-bottom: 4px solid #f1d7ab;
 	}
+
+	.show-for-small-only .button{
+		width: 100%;
+	}
 }
 
-// Next / Previous Buttons
+
+// ==========================================================================
+// Next Previous Buttons
+// ==========================================================================
+
 .c--next, 
 .c--prev {
 	margin-bottom: 0;
@@ -41,5 +54,37 @@
 
 	&.-show {
 		display: block;
+	}
+}
+
+
+// ==========================================================================
+// Select Panel
+// ==========================================================================
+
+
+.c-event-select-object {
+	.icon-checkmark {
+		display: none;
+	}
+}
+
+.c-event-select-object .selected {
+	position: relative;
+	background: #bfdafd;
+	border: 1px solid #2057a1;
+
+	h4, 
+	p, 
+	a {
+		color: #0b3a79;
+	}
+
+	.icon-checkmark {
+		position: absolute;
+		top: 1.25rem;
+		right: 0.9rem;		
+		display: block;
+		color: #0b3a79;
 	}
 }

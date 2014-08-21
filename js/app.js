@@ -120,7 +120,10 @@ function checkNav(step){
 // closeMessage();
 
 
+
+// ==========================================================================
 // close the live show down
+// ==========================================================================
 
 function completeLiveEvent() {
 
@@ -140,6 +143,49 @@ function completeLiveEvent() {
 };
 
 completeLiveEvent();
+
+
+
+// ==========================================================================
+// Create Event
+// ==========================================================================
+
+function selectObject() {
+	$('.event-choose-link').click(function() {
+	  event.preventDefault();
+	  $(this.parentNode).toggleClass('selected ');
+
+	  if ($(this.parentNode).hasClass('selected')) {
+            $(this).text('Remove');                
+        } else {
+        	$(this).text('Choose');                
+        }
+	}); 
+};
+selectObject()
+
+
+function getPeople() {
+ 	$('.people-added').hide();
+
+	$('.c-get-individuals').on( 'submit', function( event ) {
+		event.preventDefault();
+	 	$('.people-added').show();
+		$('.people-added ul.inline-list').append('<li class="panel">' + individualNameString($(this).serialize()) + '</li>');
+	});
+};
+
+getPeople()
+
+function individualNameString(str) {
+	var nameIndex = str.indexOf("=");
+	str = decodeURIComponent(str);
+	return str.substr(nameIndex+1);
+};
+
+
+
+
 
 
 

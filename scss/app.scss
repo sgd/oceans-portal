@@ -1,8 +1,13 @@
-// Defaults
 @import "settings";
 @import "foundation";
 @import "compass/css3"; 
 @import "compass/utilities";
+
+// Mixins 
+@import "mixins/flexbox";
+
+// Defaults
+@import "defaults/layout";
 
 // Components 
 @import "components/header";
@@ -12,7 +17,6 @@
 @import "components/colors";
 @import "components/typography";
 @import "components/buttons";
-
 
 // Modules
 @import "modules/live-video";

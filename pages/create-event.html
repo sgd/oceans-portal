@@ -37,28 +37,36 @@ permalink: /create-event/
 			</span>
 		</h3>
 		</div>
-		<div class="medium-3 columns">
-			<div class="panel c-create-event-class">
+		<div class="medium-3 columns c-event-select-object">
+			<div class="panel">
 				<h4>Grade 11</h4>
 				<p>St.Pauls, Science</p>
+				<a href="#" class="event-choose-link">Choose</a>
+				<i class="icon-checkmark"></i>
 			</div>
 		</div>
-		<div class="medium-3 columns">
-			<div class="panel c-create-event-class">
+		<div class="medium-3 columns c-event-select-object">
+			<div class="panel">
 				<h4>Grade 12</h4>
 				<p>St.Pauls, Science</p>
+				<a href="#" class="event-choose-link">Choose</a>
+				<i class="icon-checkmark"></i>
 			</div>
 		</div>
-		<div class="medium-3 columns">
-			<div class="panel c-create-event-class">
+		<div class="medium-3 columns c-event-select-object">
+			<div class="panel">
 				<h4>Grade 10</h4>
 				<p>St.Pauls, Science</p>
+				<a href="#" class="event-choose-link">Choose</a>
+				<i class="icon-checkmark"></i>
 			</div>
 		</div>
-		<div class="medium-3 columns">
-			<div class="panel c-create-event-class">
+		<div class="medium-3 columns c-event-select-object">
+			<div class="panel">
 				<h4>Grade 10</h4>
 				<p>St.Pauls, Science</p>
+				<a href="#" class="event-choose-link">Choose</a>
+				<i class="icon-checkmark"></i>
 			</div>
 		</div>
 	</div>
@@ -78,27 +86,25 @@ permalink: /create-event/
 				</span>
 			</h3>
 			<div class="row">
-				<div class="large-9 columns">
-					<form method="post" 
-						  action="index.html" 
-						  class="c-login-form">
+				<div class="large-12 columns">
+					<form class="c-get-individuals"
+						  method="post">
 						<input type="text"
-							   name="login"
-							   placeholder="Username or Email">
+							   name="individualName"
+							   placeholder="Individual Name">
+						<input type="submit"
+							   class="button"
+							   value="Add Person">
 					</form>
 				</div>
-				<div class="large-3 columns">
-					<a href="#" class="button">Add Person</a>
-				</div>
 			</div>
-			<h4>You&rsquo;ve added</h4>
-			<div class="row">
-				<div class="large-12 columns">
-					<ul class="inline-list">
-						<li class="panel">hello@email.com</li>
-						<li class="panel">hello@email.com</li>
-						<li class="panel">hello@email.com</li>
-					</ul>
+			<div class="people-added">
+				<h4>You&rsquo;ve added</h4>
+				<div class="row">
+					<div class="large-12 columns">
+						<ul class="inline-list">
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -190,11 +196,29 @@ permalink: /create-event/
 				  </i>
 				</span>
 			</h3>
-			<ul class="inline-list">
-				<li class="panel">OS Water Survey</li>
-				<li class="panel">OS Invasive Species</li>
-				<li class="panel">OS Invasive Species</li>
-			</ul>
+			<div class="row c-event-select-object"> 
+				<div class="small-4 columns">
+					<div class="panel">
+						<h5>OS Invasive Species</h5>
+						<a href="#" class="event-choose-link">Choose</a>
+						<i class="icon-checkmark"></i>
+					</div>
+				</div>
+				<div class="small-4 columns">
+					<div class="panel">
+						<h5>OS Invasive Species</h5>
+						<a href="#" class="event-choose-link">Choose</a>
+						<i class="icon-checkmark"></i>
+					</div>
+				</div>
+				<div class="small-4 columns">
+					<div class="panel">
+						<h5>OS Invasive Species</h5>
+						<a href="#" class="event-choose-link">Choose</a>
+						<i class="icon-checkmark"></i>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

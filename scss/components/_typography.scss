@@ -40,6 +40,10 @@
     content: "\e605";
 }
 
+.icon-checkmark:before {
+    content: "\e606";
+}
+
 /* Make sure we have some kind of fall back usability here */
 
 .screen-reader {
