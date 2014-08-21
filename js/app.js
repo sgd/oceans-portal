@@ -3,14 +3,13 @@
 $(document).foundation();
 
 $(document).ready(function() {
-	// $( "#datepicker" ).datepicker();
 
 	// Current Slide, 1, 2, 3 or 4
 	// var step = checkPageHashStep();
 	var step = 1;
 
-	console.log(checkPageHashStep());
-	// checkState(step);
+	// console.log(checkPageHashStep());
+	checkState(step);
 
 	// Selectors
 	var $prev = $('.c--prev');
@@ -37,6 +36,11 @@ $(document).ready(function() {
 			checkState(step);
 		}
 	});
+
+	completeLiveEvent();
+	selectObject()
+	getPeople()
+	getTimeDate()
 
 });
 
@@ -107,8 +111,14 @@ function checkNav(step){
 	}
 };
 
+
+// ==========================================================================
+// Kill message box
+// ==========================================================================
+
 // // kill the message box with one swift click. 
 // // this needs a check before it just delets the comment
+
 // function closeMessage(){
 // 	 var $close = $('.live-post-comment .c--close');
 
@@ -142,15 +152,13 @@ function completeLiveEvent() {
 	});
 };
 
-completeLiveEvent();
-
-
 
 // ==========================================================================
 // Create Event
 // ==========================================================================
 
 function selectObject() {
+	
 	$('.event-choose-link').click(function() {
 	  event.preventDefault();
 	  $(this.parentNode).toggleClass('selected ');
@@ -162,27 +170,63 @@ function selectObject() {
         }
 	}); 
 };
-selectObject()
-
 
 function getPeople() {
+ 	
  	$('.people-added').hide();
 
-	$('.c-get-individuals').on( 'submit', function( event ) {
+	$('.f-get-individuals').on( 'submit', function( event ) {
 		event.preventDefault();
 	 	$('.people-added').show();
-		$('.people-added ul.inline-list').append('<li class="panel">' + individualNameString($(this).serialize()) + '</li>');
+		$('.people-added ul.inline-list').append('<li class="panel">' + encodeFormString($(this).serialize()) + '</li>');
+		$(this).find("input[type=text], select").val("");
 	});
 };
 
-getPeople()
+function getTimeDate() {
 
-function individualNameString(str) {
-	var nameIndex = str.indexOf("=");
-	str = decodeURIComponent(str);
-	return str.substr(nameIndex+1);
+	$('.c-event-show-date-time').hide();
+
+	$('.f-set-time-date').on( 'submit', function( event ){
+		event.preventDefault();
+		$('.c-event-show-date-time').show();
+		var field1 = $("[name='eventTitle']").serialize();
+		var field2 = $("[name='eventTime']").serialize();
+		var field3 = $("[name='eventDate']").serialize();
+		$('h5.c-event-title strong').text( encodeFormString( field1 ) );
+		$('h5.c-event-time strong').text( encodeFormString( field2 ) );
+		$('h5.c-event-date strong').text( encodeFormString( field3 ) );
+		$("input[type='submit']").prop('disabled',true);
+		$(this).find("input[type=text], select").val("");
+	});
 };
 
+function encodeFormString(str) {
+	var nameIndex = str.indexOf("=");
+	str = decodeURIComponent(str);
+	str = str.substr(nameIndex+1);
+	return str.split("+").join(" ");
+};
+
+function changeUstream() {
+	$('.f-change-ustream-embed').on( 'submit', function( event ){
+		var ustreamEmbed = $(this).serialize();
+		event.preventDefault();
+		ustreamEmbed = decodeURIComponent(ustreamEmbed).split('</iframe>')[0];
+		console.log(encodeFormString(ustreamEmbed) );
+		$('.create-update-ustream iframe').replaceWith( encodeFormString(ustreamEmbed) );		
+	});
+};
+
+changeUstream()
+
+// ==========================================================================
+// Date Picker
+// ==========================================================================
+
+$(function() {
+    $( "#datepicker" ).datepicker();
+ });
 
 
 
