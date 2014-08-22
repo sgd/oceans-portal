@@ -37,11 +37,12 @@ $(document).ready(function() {
 		}
 	});
 
-	completeLiveEvent();
+	completeLiveEvent()
 	selectObject()
 	getPeople()
 	getTimeDate()
 	changeUstream()
+	closeMessage()
 });
 
 // Sets the overall state to show the current Slide
@@ -116,15 +117,6 @@ function checkNav(step){
 // Live Event
 // ==========================================================================
 
-function postComment(){
-	$('.f-post-live-comment').on( 'submit', function( event ){
-		console.log( 'this is lame' );
-	});
-};
-
-postComment()
-
-
 // kill the message box with one swift click. 
 // this needs a check before it just delets the comment
 
@@ -132,13 +124,11 @@ function closeMessage(){
 	 var $close = $('.live-post-comment .c--close');
 
 	 $close.click(function(){
-	 	$(this).closest('.live-post-comment').fadeOut( "700", function(){
+	 	$(this).closest('.live-post-comment').fadeOut( "300", function(){
 
 	 	});
 	 });
 };
-
-closeMessage();
 
 
 // Close the live show
