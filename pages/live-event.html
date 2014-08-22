@@ -10,19 +10,17 @@ permalink: /live/
 </section>
 
 <div id="event-complete-modal" class="reveal-modal small" data-reveal>
-  <h4>Are you sure you want to end the live event?</h4>
-  <p>This means everything will literally stop right now.</p>
-  <p><a href="#" class="live-complete-true">Yes, end the live event</a></p>
-  <a class="close-reveal-modal">
-  	<i class="icon-cross">
-		<span class="screen-reader">Close Modal</span>
-	</i>
-  </a>
+  <h4>Do you really want to end this event?</h4>
+  <p>
+	  This means everything will literally stop right now.<br>
+	  <a href="#" class="live-complete-true">Yes, end the live event</a>
+  </p>
+  <a class="close-reveal-modal"><i class="icon-cross"></i></a>
 </div>
 
 <div class="live-video">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="medium-12 columns">
 			<div class="flex-video">
 		        <iframe width="420"
 		        	    height="315"
@@ -36,7 +34,7 @@ permalink: /live/
 
 <div class="live-event-completed">
 	<div class="row">
-		<div class="large-12 columns">
+		<div class="medium-12 columns">
 			<div data-alert class="alert-box">
 				<i class="icon-warning">
 					<span class="screen-reader">Live Event Over</span>
@@ -46,26 +44,34 @@ permalink: /live/
 		</div>
 	</div>
 </div>
-
-<div class="live-feed">
-	<div class="row live-comment-box">
-		<div class="large-12 columns">
-				<form class="f-post-live-comment"
-				  method="post">
+<!-- 
+<div class="live-comment-box">
+	<div class="row">
+		<div class="medium-12 columns">
+			<div class="row f-post-live-comment">
+					<div class="medium-10 columns">
 						<input type="text"
-						  	   name="liveComment"
-						       placeholder="Post a comment for everyone to see"
-						       required>
-					<input type="submit"
-						   class="button expand"
-						   value="Post">
+							   name="liveComment"
+							   class="live-comment-input"
+							   placeholder="Post a comment for everyone to see">
+					</div>
+					<div class="medium-2 columns">
+						<a href='#'
+						   class="button expand">Post</a>
+					</div>
 				</form>
+			</div>
 		</div>
 	</div>
+</div> -->
 
-	<div class="live-comments-stream">
-		{% include live-stream-comments.html %}
-		{% include live-stream-comments.html %}
+<div class="live-feed">
+	<div class="row ">
+		<div class="medium-12 columns">
+			<div class="live-comments-stream">
+				{% include disqus.html %}
+			</div>
+		</div>
 	</div>
 </div>
 
