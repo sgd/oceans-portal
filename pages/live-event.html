@@ -49,12 +49,22 @@ permalink: /live/
 
 <div class="live-feed">
 	<div class="row live-comment-box">
-		<div class="large-12 columns live-comment-input">
-			post comments from here eventually
+		<div class="large-12 columns">
+				<form class="f-post-live-comment"
+				  method="post">
+						<input type="text"
+						  	   name="liveComment"
+						       placeholder="Post a comment for everyone to see"
+						       required>
+					<input type="submit"
+						   class="button expand"
+						   value="Post">
+				</form>
 		</div>
 	</div>
 
 	<div class="live-comments-stream">
+		{% include live-stream-comments.html %}
 		{% include live-stream-comments.html %}
 	</div>
 </div>

@@ -41,7 +41,7 @@ $(document).ready(function() {
 	selectObject()
 	getPeople()
 	getTimeDate()
-
+	changeUstream()
 });
 
 // Sets the overall state to show the current Slide
@@ -113,28 +113,33 @@ function checkNav(step){
 
 
 // ==========================================================================
-// Kill message box
+// Live Eevent
 // ==========================================================================
 
-// // kill the message box with one swift click. 
-// // this needs a check before it just delets the comment
+function postComment(){
+	$('.f-post-live-comment').on( 'submit', function( event ){
+		console.log( 'this is lame' );
+	});
+};
 
-// function closeMessage(){
-// 	 var $close = $('.live-post-comment .c--close');
-
-// 	 $close.click(function(){
-// 	 	$('.live-post-comment').hide();
-// 	 });
-// };
-
-// closeMessage();
+postComment()
 
 
+// kill the message box with one swift click. 
+// this needs a check before it just delets the comment
 
-// ==========================================================================
-// close the live show down
-// ==========================================================================
+function closeMessage(){
+	 var $close = $('.live-post-comment .c--close');
 
+	 $close.click(function(){
+	 	$(this).closest('.live-post-comment').hide();
+	 });
+};
+
+closeMessage();
+
+
+// Close the live show
 function completeLiveEvent() {
 
 	var $completeLink = $('.live-event-end');
@@ -156,6 +161,13 @@ function completeLiveEvent() {
 // ==========================================================================
 // Create Event
 // ==========================================================================
+
+function encodeFormString(str) {
+	var nameIndex = str.indexOf("=");
+	str = decodeURIComponent(str);
+	str = str.substr(nameIndex+1);
+	return str.split("+").join(" ");
+};
 
 function selectObject() {
 	
@@ -180,6 +192,7 @@ function getPeople() {
 	 	$('.people-added').show();
 		$('.people-added ul.inline-list').append('<li class="panel">' + encodeFormString($(this).serialize()) + '</li>');
 		$(this).find("input[type=text], select").val("");
+		$(this).validate();
 	});
 };
 
@@ -198,27 +211,21 @@ function getTimeDate() {
 		$('h5.c-event-date strong').text( encodeFormString( field3 ) );
 		$("input[type='submit']").prop('disabled',true);
 		$(this).find("input[type=text], select").val("");
+		$(this).validate();
 	});
 };
 
-function encodeFormString(str) {
-	var nameIndex = str.indexOf("=");
-	str = decodeURIComponent(str);
-	str = str.substr(nameIndex+1);
-	return str.split("+").join(" ");
-};
-
 function changeUstream() {
+
 	$('.f-change-ustream-embed').on( 'submit', function( event ){
 		var ustreamEmbed = $(this).serialize();
 		event.preventDefault();
 		ustreamEmbed = decodeURIComponent(ustreamEmbed).split('</iframe>')[0];
 		console.log(encodeFormString(ustreamEmbed) );
-		$('.create-update-ustream iframe').replaceWith( encodeFormString(ustreamEmbed) );		
+		$('.create-update-ustream iframe').replaceWith( encodeFormString(ustreamEmbed) );
+		$(this).validate();	
 	});
 };
-
-changeUstream()
 
 // ==========================================================================
 // Date Picker
