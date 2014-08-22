@@ -113,7 +113,7 @@ function checkNav(step){
 
 
 // ==========================================================================
-// Live Eevent
+// Live Event
 // ==========================================================================
 
 function postComment(){
@@ -132,7 +132,9 @@ function closeMessage(){
 	 var $close = $('.live-post-comment .c--close');
 
 	 $close.click(function(){
-	 	$(this).closest('.live-post-comment').hide();
+	 	$(this).closest('.live-post-comment').fadeOut( "700", function(){
+
+	 	});
 	 });
 };
 
@@ -148,7 +150,7 @@ function completeLiveEvent() {
 
 	$('.live-complete-true').click(function(){
 		$('#event-complete-modal').foundation('reveal', 'close');
-		$('.live-event-completed').show();
+		$('.live-event-completed').fadeIn( "700", function(){});
 		$completeLink.css({opacity: '0.5', cursor: 'default'})
 		$completeLink.text('Live Event Over');
 		$completeLink.click(function(){
@@ -189,9 +191,9 @@ function getPeople() {
 
 	$('.f-get-individuals').on( 'submit', function( event ) {
 		event.preventDefault();
-	 	$('.people-added').show();
+	 	$('.people-added').fadeIn( "200", function(){});
 		$('.people-added ul.inline-list').append('<li class="panel">' + encodeFormString($(this).serialize()) + '</li>');
-		$(this).find("input[type=text], select").val("");
+		$(this).find("input[type=email], select").val("");
 		$(this).validate();
 	});
 };
@@ -202,14 +204,14 @@ function getTimeDate() {
 
 	$('.f-set-time-date').on( 'submit', function( event ){
 		event.preventDefault();
-		$('.c-event-show-date-time').show();
+		$('.c-event-show-date-time').fadeIn( "200", function(){});
 		var field1 = $("[name='eventTitle']").serialize();
 		var field2 = $("[name='eventTime']").serialize();
 		var field3 = $("[name='eventDate']").serialize();
 		$('h5.c-event-title strong').text( encodeFormString( field1 ) );
 		$('h5.c-event-time strong').text( encodeFormString( field2 ) );
 		$('h5.c-event-date strong').text( encodeFormString( field3 ) );
-		$("input[type='submit']").prop('disabled',true);
+		$('.f-set-time-date button').prop('disabled',true);
 		$(this).find("input[type=text], select").val("");
 		$(this).validate();
 	});
