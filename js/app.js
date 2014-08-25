@@ -108,7 +108,7 @@ function checkNav(step){
 		$prev.css({ opacity: '1' });
 	}
 	if (step === 4){
-		$next.text('Finish');
+		$next.replaceWith('<a href="/dashboard/" class="c--next button small">Finish</a>');
 	}
 };
 
@@ -124,9 +124,7 @@ function closeMessage(){
 	 var $close = $('.live-post-comment .c--close');
 
 	 $close.click(function(){
-	 	$(this).closest('.live-post-comment').fadeOut( "300", function(){
-
-	 	});
+	 	$(this).closest('.live-post-comment').fadeOut( "300", function(){});
 	 });
 };
 
@@ -143,9 +141,7 @@ function completeLiveEvent() {
 		$('.live-event-completed').fadeIn( "700", function(){});
 		$completeLink.css({opacity: '0.5', cursor: 'default'})
 		$completeLink.text('Live Event Over');
-		$completeLink.click(function(){
-			return false;
-		});
+		$completeLink.prop('disabled',true);	
 	});
 };
 
