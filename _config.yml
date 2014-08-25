@@ -1,6 +1,7 @@
 # Site settings
 title: Oceans
 description: "This is a description about the oceans project"
+baseurl: "/oceans-portal"
 url: ""
 bodyclass: ""
 
