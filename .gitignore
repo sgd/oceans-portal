@@ -5,3 +5,5 @@
 /_site/*
 _site/*
 _site/js/app.js
+
+s3_website.yml
