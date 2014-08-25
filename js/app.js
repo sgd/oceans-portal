@@ -108,7 +108,7 @@ function checkNav(step){
 		$prev.css({ opacity: '1' });
 	}
 	if (step === 4){
-		$next.replaceWith('<a href="{{ site.baseurl }}/dashboard/" class="c--next button small">Finish</a>');
+		$next.replaceWith('<a href="/dashboard/" class="c--next button small">Finish</a>');
 	}
 };
 
