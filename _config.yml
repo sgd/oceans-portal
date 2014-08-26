@@ -1,8 +1,8 @@
 # Site settings
-title: Oceans
-description: "This is a description about the oceans project"
-baseurl: "/oceans-portal"
-url: ""
+title: Ocean Sciences
+description: "Welcome to the Ocean Sciences Project"
+# baseurl: ""
+# url: ""
 bodyclass: ""
 
 # Build settings
