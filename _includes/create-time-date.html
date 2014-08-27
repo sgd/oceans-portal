@@ -1,131 +1,154 @@
 <section class="section--headliner">
-		<div class="row">
-			<div class="large-8 large-centered columns text-center">
-				<h1>Schedule your Event</h1>
-				<h5>Here you can add the basic info to schedule your Event.</h5>
-			</div>
-		</div>
-	</section>
-
 	<div class="row">
-		<div class="small-12 columns">
-			<form class="f-set-time-date" method="post">
-				<div class="row">
-					<div class="medium-12 columns">
-						<h3>
-							Add a title
-							<span data-tooltip 
-							  	  class="has-tip tip-top" 
-							  	  title="Here you can add the basic info for your Event.">
-								<i class="icon-info"></i>
-							</span>
-						</h3>
-						<input type="text"
-							   name="eventTitle"
-							   placeholder="Add a title for your live event"
-							   required>
-					</div>
-					<div class="medium-6 columns">
-					<h3>Add a time</h3>
-						<select name="eventTime" required>
-							  <option value="" disabled selected>
-							  	Select a time for your event
-							  </option>
-							  <option value="12:00am">12:00am</option>
-							  <option value="12:30am">12:30am</option>
-							  <option value="1:00am">1:00am</option>
-							  <option value="2:00am">2:00am</option>
-							  <option value="3:00am">3:00am</option>
-							  <option value="4:00am">4:00am</option>
-							  <option value="5:00am">5:00am</option>
-							  <option value="6:00am">6:00am</option>
-							  <option value="7:00am">7:00am</option>
-							  <option value="8:00am">8:00am</option>
-							  <option value="9:00am">9:00am</option>
-							  <option value="10:00am">10:00am</option>
-							  <option value="11:00am">11:00am</option>
-							  <option value="12:00pm">12:00pm</option>
-							  <option value="12:30pm">12:30pm</option>
-							  <option value="1:00pm">1:00pm</option>
-							  <option value="2:00pm">2:00pm</option>
-							  <option value="3:00pm">3:00pm</option>
-							  <option value="4:00pm">4:00pm</option>
-							  <option value="5:00pm">5:00pm</option>
-							  <option value="6:00pm">6:00pm</option>
-							  <option value="7:00pm">7:00pm</option>
-							  <option value="8:00pm">8:00pm</option>
-							  <option value="9:00pm">9:00pm</option>
-							  <option value="10:00pm">10:00pm</option>
-							  <option value="11:00pm">11:00pm</option>
-						</select>
-					</div>
-					<div class="medium-6 columns">
-						<h3>Add a date</h3>
-						<input type="text"
-							   name="eventDate"
-							   id="datepicker"
-							   placeholder="Choose a date for your event"
-							   required>
-					</div>
-					<div class="medium-12 columns">
-						<input type="submit"
-							   class="button"
-							   value="Add time and date">
-					</div>
-				</div>
-			</form>
+		<div class="large-8 large-centered columns text-center">
+			<h1>Schedule your Event</h1>
+			<h5>Here you can add the basic info to schedule your Event.</h5>
 		</div>
 	</div>
+</section>
 
-	<div class="row c-event-show-date-time">
-		<div class="small-12 columns">
+<div class="row">
+	<div class="small-12 columns">
+		<form class="f-set-time-date" method="post">
 			<div class="row">
 				<div class="medium-4 columns">
-					<div class="panel">
-						<p>The title of your event is:</p>
-						<h5 class="c-event-title"><strong></strong></h5>
-					</div>
+					<h3>Add a title</h3>
+					<input type="text"
+						   name="eventTitle"
+						   placeholder="Add a title for your live event"
+						   required>
 				</div>
 				<div class="medium-4 columns">
-					<div class="panel">
-						<p>Your event will take place at:</p>
-						<h5 class="c-event-time"><strong></strong></h5>
-					</div>
+				<h3>Add a time</h3>
+					<select name="eventTime" required>
+						  <option value="" disabled selected>
+						  	Select a time for your event
+						  </option>
+						  <option value="12:00am">12:00am</option>
+						  <option value="12:30am">12:30am</option>
+						  <option value="1:00am">1:00am</option>
+						  <option value="2:00am">2:00am</option>
+						  <option value="3:00am">3:00am</option>
+						  <option value="4:00am">4:00am</option>
+						  <option value="5:00am">5:00am</option>
+						  <option value="6:00am">6:00am</option>
+						  <option value="7:00am">7:00am</option>
+						  <option value="8:00am">8:00am</option>
+						  <option value="9:00am">9:00am</option>
+						  <option value="10:00am">10:00am</option>
+						  <option value="11:00am">11:00am</option>
+						  <option value="12:00pm">12:00pm</option>
+						  <option value="12:30pm">12:30pm</option>
+						  <option value="1:00pm">1:00pm</option>
+						  <option value="2:00pm">2:00pm</option>
+						  <option value="3:00pm">3:00pm</option>
+						  <option value="4:00pm">4:00pm</option>
+						  <option value="5:00pm">5:00pm</option>
+						  <option value="6:00pm">6:00pm</option>
+						  <option value="7:00pm">7:00pm</option>
+						  <option value="8:00pm">8:00pm</option>
+						  <option value="9:00pm">9:00pm</option>
+						  <option value="10:00pm">10:00pm</option>
+						  <option value="11:00pm">11:00pm</option>
+					</select>
 				</div>
 				<div class="medium-4 columns">
-					<div class="panel">
-						<p>Your event will take place on:</p>
-						<h5 class="c-event-date"><strong></strong></h5>
-					</div>
+					<h3>Add a date</h3>
+					<input type="text"
+						   name="eventDate"
+						   id="datepicker"
+						   placeholder="Choose a date for your event"
+						   required>
+				</div>
+				<div class="medium-4 columns end">
+					<input type="submit"
+						   class="button"
+						   value="Add time, date and title">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="row c-event-show-date-time">
+	<div class="small-12 columns">
+		<div class="row">
+			<div class="medium-4 columns">
+				<div class="panel">
+					<p>The title of your event is:</p>
+					<h5 class="c-event-title"><strong></strong></h5>
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="panel">
+					<p>Your event will take place at:</p>
+					<h5 class="c-event-time"><strong></strong></h5>
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="panel">
+					<p>Your event will take place on:</p>
+					<h5 class="c-event-date"><strong></strong></h5>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 <br>
 <br>
-	<div class="row">
-		<div class="small-12 columns">
-			<h3>
-				Which module is this for?
-				<span data-tooltip 
-				  class="has-tip tip-top" 
-				  title="To help students on the boat and in the classroom 
-				  follow along with the lesson, add a Module. This will also 
-				  allow them to record measurements or information from the 
-				  Event.">
-				  <i class="icon-info">
-				  	<span class="screen-reader">Tool Tip</span>
-				  </i>
-				</span>
-			</h3>
-			<div class="row c-event-select-object"> 
-				<div class="medium-4 columns">
-					<div class="panel">
-						<h5>OS Invasive Species</h5>
-						<a href="#" class="event-choose-link">Choose</a>
-						<i class="icon-checkmark"></i>
-					</div>
-				</div>
-			</div>
+<div class="row c-event-select-object"> 
+	<div class="medium-6 columns">
+		<h3>
+			Where will this event take place?
+			<span data-tooltip 
+			  class="has-tip tip-top" 
+			  title="Choose from the locations below to assign a location 
+			  to your event">
+			  <i class="icon-info"></i>
+			</span>
+		</h3>
+		<div class="panel">
+			<h5>Bonne Bay</h5>
+			<a href="#" class="event-choose-link">Choose</a>
+			<i class="icon-checkmark"></i>
+		</div>
+		<div class="panel">
+			<h5>Another Location</h5>
+			<a href="#" class="event-choose-link">Choose</a>
+			<i class="icon-checkmark"></i>
+		</div>
+		<div class="panel">
+			<h5>A Last Location</h5>
+			<a href="#" class="event-choose-link">Choose</a>
+			<i class="icon-checkmark"></i>
 		</div>
 	</div>
+	<div class="medium-6 columns">
+		<h3>
+			Which module is this for?
+			<span data-tooltip 
+			  class="has-tip tip-top" 
+			  title="To help students on the boat and in the classroom 
+			  follow along with the lesson, add a Module. This will also 
+			  allow them to record measurements or information from the 
+			  Event.">
+			  <i class="icon-info"></i>
+			</span>
+		</h3>
+		<div class="panel">
+			<h5>OS Invasive Species</h5>
+			<a href="#" class="event-choose-link">Choose</a>
+			<i class="icon-checkmark"></i>
+		</div>
+		<div class="panel">
+			<h5>Something Else</h5>
+			<a href="#" class="event-choose-link">Choose</a>
+			<i class="icon-checkmark"></i>
+		</div>
+		<div class="panel">
+			<h5>A Final Location</h5>
+			<a href="#" class="event-choose-link">Choose</a>
+			<i class="icon-checkmark"></i>
+		</div>
+	</div>
+</div>

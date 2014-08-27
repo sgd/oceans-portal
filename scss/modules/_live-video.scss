@@ -5,6 +5,13 @@
 		margin-bottom: 0;
 		color: #ffffff;		
 	}
+
+	.event-is-live {
+		@include border-radius(2px);
+		border: 1px solid #008cba;
+		padding: 0 0.5rem;
+		background: #415173;
+	}
 }
 
 // ==========================================================================

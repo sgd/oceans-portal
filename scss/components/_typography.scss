@@ -44,6 +44,15 @@
     content: "\e606";
 }
 
+.icon-user:before {
+    content: "\e607";
+}
+
+.icon-home:before {
+    content: "\e608";
+}
+
+
 /* Make sure we have some kind of fall back usability here */
 
 .screen-reader {

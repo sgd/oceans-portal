@@ -57,14 +57,14 @@ function checkState(step){
 };
 
 // Reads the Page Hash to find the current Slide
-function checkPageHashStep(){
-	return location.hash.replace('#/slide/', '') || 1;
-};
+// function checkPageHashStep(){
+// 	return location.hash.replace('#/slide/', '') || 1;
+// };
 
 // Changes the Page Hash to reflect the current slide
-function setPageHash(step){
-	location.hash = '/slide/' + step;
-};
+// function setPageHash(step){
+// 	location.hash = '/slide/' + step;
+// };
 
 function checkSlide(step) {
 	var $slide = $('.create-slide');
@@ -111,7 +111,6 @@ function checkNav(step){
 		$next.replaceWith('<a href="/dashboard/" class="c--next button small">Finish</a>');
 	}
 };
-
 
 // ==========================================================================
 // Live Event

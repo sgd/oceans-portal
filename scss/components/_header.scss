@@ -1,6 +1,21 @@
 .c-header {	
-	padding: 2rem 0;
+	padding: 1.3rem 0;
 	background: #213459;
+	color: #ffffff;
+
+	.c--home-link {
+		font-size: 1.6rem;
+		color: #ffffff;
+	}
+
+	.c--profile-link {
+		text-align: right;
+		
+		p {
+			margin-bottom: 0;
+			margin-left: 0.4em;
+		}
+	}
 }
 
 body.login .c--home-link {
