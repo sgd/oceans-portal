@@ -108,7 +108,7 @@ function checkNav(step){
 		$prev.css({ opacity: '1' });
 	}
 	if (step === 4){
-		$next.replaceWith('<a href="/dashboard/" class="c--next button small">Finish</a>');
+		$next.replaceWith('<a href="/dashboard/" class="c--next button small expand">Finish</a>');
 	}
 };
 
@@ -163,7 +163,8 @@ function selectObject() {
 	  $(this.parentNode).toggleClass('selected ');
 
 	  if ($(this.parentNode).hasClass('selected')) {
-            $(this).text('Remove');                
+            $(this).text('Remove');
+            $(this).after('<i class="icon-checkmark"></i>');                
         } else {
         	$(this).text('Choose');                
         }
@@ -221,9 +222,3 @@ function changeUstream() {
 $(function() {
     $( "#datepicker" ).datepicker();
  });
-
-
-
-
-
-
