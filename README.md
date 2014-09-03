@@ -59,3 +59,9 @@ $ compass watch
 
 #### Done
 You should now be able to see the latest version of the Portal on your local machine! 
+
+## Deployment
+
+Deployment is made easy with [https://github.com/laurilehmijoki/s3_website](s3_website)
+
+Follow the instructions on github inside of the root folder of this project.
